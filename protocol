@@ -1,0 +1,20 @@
+player says: ["action", { type: "draw" }] // draw a card
+
+server responds: ["result", { type: "draw", card: x, red_threes: [y,z] }]
+You drew card x and these red threes.  The card is added to the hand, the red threes are added to the pile of red threes.
+
+server broadcasts to all other players: ["result", { type: "draw", player: x, red_threes: [y,z] }]
+Player x drew a card and these red threes.  One card is added to the hand, the red threes are added to the pile of red threes.
+
+
+player says: ["action", { type: "grab", cards_from_hand: [...] }] // grab the pile
+The server can figure out which set on the table (if any) will be used from looking at the top card on the pile.
+
+server responds: ["result", { type: "grab", cards: [...] }]
+Take the top card of the pile and the cards_from_hand and add them to the corresponding set.  Then add the rest of the pile to the hand.
+
+server broadcasts to all other players: ["result", { type: "grab", player: x, number_of_cards: n, cards_from_hand: [...] }]
+Player x took the pile using these cards.  Update the player's sets and hand size accordingly.
+
+
+

@@ -1,0 +1,97 @@
+.card {
+    background-image: url("images/SVG-cards-2.0.1/svg-cards.gif");
+    width:  100px;
+    height: 150px;
+}
+
+.card_placeholder { background-image: none; background-color: silver; }
+.card_unknown     { background-position: -200px -600px; }
+.card_joker       { background-position: -100px -600px; }
+
+.card_ace_of_clubs   { background-position:     0px   0px }
+.card_two_of_clubs   { background-position:  -100px   0px }
+.card_three_of_clubs { background-position:  -200px   0px }
+.card_four_of_clubs  { background-position:  -300px   0px }
+.card_five_of_clubs  { background-position:  -400px   0px }
+.card_six_of_clubs   { background-position:  -500px   0px }
+.card_seven_of_clubs { background-position:  -600px   0px }
+.card_eight_of_clubs { background-position:  -700px   0px }
+.card_nine_of_clubs  { background-position:  -800px   0px }
+.card_ten_of_clubs   { background-position:  -900px   0px }
+.card_jack_of_clubs  { background-position: -1000px   0px }
+.card_queen_of_clubs { background-position: -1100px   0px }
+.card_king_of_clubs  { background-position: -1200px   0px }
+
+.card_ace_of_diamonds   { background-position:     0px -150px }
+.card_two_of_diamonds   { background-position:  -100px -150px }
+.card_three_of_diamonds { background-position:  -200px -150px }
+.card_four_of_diamonds  { background-position:  -300px -150px }
+.card_five_of_diamonds  { background-position:  -400px -150px }
+.card_six_of_diamonds   { background-position:  -500px -150px }
+.card_seven_of_diamonds { background-position:  -600px -150px }
+.card_eight_of_diamonds { background-position:  -700px -150px }
+.card_nine_of_diamonds  { background-position:  -800px -150px }
+.card_ten_of_diamonds   { background-position:  -900px -150px }
+.card_jack_of_diamonds  { background-position: -1000px -150px }
+.card_queen_of_diamonds { background-position: -1100px -150px }
+.card_king_of_diamonds  { background-position: -1200px -150px }
+
+.card_ace_of_hearts   { background-position:     0px -300px }
+.card_two_of_hearts   { background-position:  -100px -300px }
+.card_three_of_hearts { background-position:  -200px -300px }
+.card_four_of_hearts  { background-position:  -300px -300px }
+.card_five_of_hearts  { background-position:  -400px -300px }
+.card_six_of_hearts   { background-position:  -500px -300px }
+.card_seven_of_hearts { background-position:  -600px -300px }
+.card_eight_of_hearts { background-position:  -700px -300px }
+.card_nine_of_hearts  { background-position:  -800px -300px }
+.card_ten_of_hearts   { background-position:  -900px -300px }
+.card_jack_of_hearts  { background-position: -1000px -300px }
+.card_queen_of_hearts { background-position: -1100px -300px }
+.card_king_of_hearts  { background-position: -1200px -300px }
+
+.card_ace_of_spades   { background-position:     0px -450px }
+.card_two_of_spades   { background-position:  -100px -450px }
+.card_three_of_spades { background-position:  -200px -450px }
+.card_four_of_spades  { background-position:  -300px -450px }
+.card_five_of_spades  { background-position:  -400px -450px }
+.card_six_of_spades   { background-position:  -500px -450px }
+.card_seven_of_spades { background-position:  -600px -450px }
+.card_eight_of_spades { background-position:  -700px -450px }
+.card_nine_of_spades  { background-position:  -800px -450px }
+.card_ten_of_spades   { background-position:  -900px -450px }
+.card_jack_of_spades  { background-position: -1000px -450px }
+.card_queen_of_spades { background-position: -1100px -450px }
+.card_king_of_spades  { background-position: -1200px -450px }
+
+
+/* center the pile and the deck */
+.center { text-align: center; }
+
+/* display sets of cards horizontally, overlapping */
+.hand .card, .meld .card, .red_threes .card {
+    display: inline-block;
+    margin-right: -85px;
+}
+
+.hand, .meld, .red_threes {
+    padding-right: 85px;
+}
+
+.player .hand, .player .red_threes, .player .melds, .meld, .pile, .deck {
+    display: inline-block;
+    margin: 1em;
+}
+
+
+.card {
+    position: relative;
+}
+
+.card.selected {
+    top: -15px;
+}
+
+.meld.selected {
+    border: 3px solid blue;
+}
